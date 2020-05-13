@@ -1,0 +1,12 @@
+<h1>WORD COUNT</h1>
+
+<form action="{% url 'count' %}"> <!-- l'action del clic del bottone meglio passare non l'absolute url della 2a pagina ma in questo modo-->
+    <textarea cols="40", rows="5", name="fulltext"></textarea> <!-- questa è la finestra col testo -->
+    <br /> <!-- questa è il return per dirgli di andare a caporiga così il bottone sarà sotto non a fianco -->
+    <input type="submit"value="Count!" /> <!-- questa è il bottone -->
+</form>
+
+<form action="{% url 'about' %}"> <!-- l'action del clic del bottone meglio passare non l'absolute url della 2a pagina ma in questo modo-->
+    <br /> <!-- questa è il return per dirgli di andare a caporiga così il bottone sarà sotto non a fianco -->
+    <input type="submit"value="Go to the about page!" /> <!-- questa è il bottone -->
+</form>

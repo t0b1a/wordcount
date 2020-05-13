@@ -1,0 +1,15 @@
+<h1>There are {{ count }} words in your text</h1> <!-- inserito il key per darmi il value di count da views.py -->
+
+<a href="{% url 'homepage' %}">Start again!</a>
+
+<h1>Il tuo testo:</h1>
+{{ fulltext }} <!-- così chiamo il key del value fulltext di views.py -->
+
+<h1>word count:</h1>
+{% for word, counttotal in sortedwords %} <!-- inizia un loop -->
+
+{{ word }} - {{ counttotal }}
+<br />
+
+
+{% endfor %} <!-- finisce il loop -->
